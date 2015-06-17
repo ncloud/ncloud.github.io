@@ -35,13 +35,13 @@
   		};
 
   	// 컴캐스트
-  	var data =  {
+  	var data4 =  {
   			"US" : 1
   	};
 
 
   	// 보다폰  // 몰타..
-  	var data =  {
+  	var data5 =  {
   			"GB" : 1,
   			"AL" : 1,
   			"AU" : 1,
@@ -66,6 +66,80 @@
   			"TR" : 1
   	};
 
+  	// 도이치 텔레콤 (Central Europe)
+  	var data6 = {
+  		"AT" : 1, //CE
+  		"CZ" : 1, //CE
+  		"DE" : 1, //CE
+  		"HU" : 1, //CE
+  		"PL" : 1, //CE
+  		"SK" : 1, //CE
+  		"SI" : 1, //CE
+  		"HR" : 1,
+  		"MK" : 1,
+  		"ME" : 1,
+  		"GR" : 1,
+  		"ES" : 1
+  	};
+
+  	// Telefonica
+  	var data7 = {
+  		"ES" : 1,
+  		"AR" : 1,
+  		"BR" : 1,
+  		"CL" : 1,
+  		"CO" : 1,
+  		"CR" : 1,
+  		"CZ" : 1,
+  		"EC" : 1,
+  		"SV" : 1,
+  		"DE" : 1,
+  		"GT" : 1,
+  		"IT" : 1,
+  		"MX" : 1,
+  		"NI" : 1,
+  		"PA" : 1,
+  		"PE" : 1,
+  		"SK" : 1,
+  		"SD" : 1,
+  		"UY" : 1,
+  		"VE" : 1,
+  		"GB" : 1
+  	};
+
+  	// NTT DOCOMO
+  	var data8 = {
+  		"JP" : 1
+  	};
+
+  	// Softbank
+  	var data9 = {
+  		"JP" : 1
+  	};
+
+  	// American Movil
+  	var data10 = {
+  		"MX" : 1,
+  		"AR" : 1,
+  		"BR" : 1,
+  		"CL" : 1,
+  		"CO" : 1,
+  		"CR" : 1,
+  		"DO" : 1,
+  		"EC" : 1,
+  		"SV" : 1,
+  		"GT" : 1,
+  		"HN" : 1,
+  		"NI" : 1,
+  		"PA" : 1,
+  		"PY" : 1,
+  		"PE" : 1,
+  		"PR" : 1,
+  		"US" : 1,
+  		"UY" : 1,
+  		"AU" : 1
+  	}
+
 		$('#map').vectorMap({
 			map: 'world_mill_en',
 			backgroundColor:'#ffffff',
@@ -89,7 +163,7 @@
 			},
 			series: {
 	            regions: [{
-	              values: data,
+	              values: data10,
 	              scale: ['#FF0000'],
 	              normalizeFunction: 'polynomial'
 	            }]
