@@ -16,12 +16,19 @@
 	</div>
 
 	<script type="text/javascript">
+	// 차이나 모바일
+	var data = {
+  				"CN": 1,
+  				"PK": 1,
+  				"TH":1
+  				};
+
 		$('#map').vectorMap({
 			map: 'world_mill_en',
 			backgroundColor:'#ffffff',
 			regionStyle: {
 			  initial: {
-			    fill: '#eee',
+			    fill: '#ddd',
 			    "fill-opacity": 1,
 			    stroke: 'none',
 			    "stroke-width": 0,
@@ -36,7 +43,14 @@
 			  },
 			  selectedHover: {
 			  }
-			}
+			},
+			series: {
+	            regions: [{
+	              values: data,
+	              scale: ['#FF0000'],
+	              normalizeFunction: 'polynomial'
+	            }]
+	          },
 			});
 	</script>
 </body>
