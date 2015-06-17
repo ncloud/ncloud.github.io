@@ -10,11 +10,12 @@
 <body>
 	<style type="text/css">
 		#select {}
-		#map { position:fixed; left:0; right:0; bottom:0; top:100px; }
+		#map { position:fixed; left:0; right:0; bottom:0; top:30px; }
 	</style>
 	
 	<div id="select">
-		<select>
+		<select onchange="changeTelecom(this); return false;">
+			<option value="0">통신사를 선택해주세요</option>
 			<option value="1">차이나모바일</option>
 			<option value="2">버라이즌</option>
 			<option value="3">AT&amp;T</option>
@@ -172,21 +173,55 @@
 			    cursor: 'pointer'
 			  },
 			  selected: {
-			    fill: 'yellow'
+			    fill: '#ff0000'
 			  },
 			  selectedHover: {
 			  }
-			},
-			series: {
-	            regions: [{
-	              values: data10,
-	              scale: ['#FF0000'],
-	              normalizeFunction: 'polynomial'
-	            }]
-	          },
 			});
 
-  	    console.log(map);
+  	    function changeTelecom(obj) {
+  	    	var $this = $(obj);
+
+  	    	if($this.val() > 0) {
+  	    		map.clearSelectedRegions();
+
+  	    		var data = null;
+  	    		switch($this.val()) {
+  	    			case '1':
+  	    				data = data1;
+  	    			break;
+  	    			case '2':
+  	    				data = data2;
+  	    			break;
+  	    			case '3':
+  	    				data = data3;
+  	    			break;
+  	    			case '4':
+  	    				data = data4;
+  	    			break;
+  	    			case '5':
+  	    				data = data5;
+  	    			break;
+  	    			case '6':
+  	    				data = data6;
+  	    			break;
+  	    			case '7':
+  	    				data = data7;
+  	    			break;
+  	    			case '8':
+  	    				data = data8;
+  	    			break;
+  	    			case '9':
+  	    				data = data9;
+  	    			break;
+  	    			case '10':
+  	    				data = data10;
+  	    			break;
+  	    		}
+
+  	    		map.setSelectedRegions(Object.keys(data));
+  	    	}
+  	    }
 	</script>
 </body>
 </html>
