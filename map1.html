@@ -9,14 +9,17 @@
 </head>
 <body>
 	<style type="text/css">
-		#map { width:100%; height:500px; }
+		#map { position:fixed; width:100%; height:100%; }
 	</style>
 
 	<div id="map">
 	</div>
 
 	<script type="text/javascript">
-		$('#map').vectorMap({map: 'world_mill_en'});
+		$('#map').vectorMap({
+			map: 'world_mill_en',
+			backgroundColor:'#ffffff'
+			});
 	</script>
 </body>
 </html>
