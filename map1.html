@@ -18,7 +18,25 @@
 	<script type="text/javascript">
 		$('#map').vectorMap({
 			map: 'world_mill_en',
-			backgroundColor:'#ffffff'
+			backgroundColor:'#ffffff',
+			regionStyle: {
+			  initial: {
+			    fill: '#eee',
+			    "fill-opacity": 1,
+			    stroke: 'none',
+			    "stroke-width": 0,
+			    "stroke-opacity": 1
+			  },
+			  hover: {
+			    "fill-opacity": 0.8,
+			    cursor: 'pointer'
+			  },
+			  selected: {
+			    fill: 'yellow'
+			  },
+			  selectedHover: {
+			  }
+			}
 			});
 	</script>
 </body>
