@@ -26,6 +26,7 @@
 			<option value="8">NTT DOCOMO</option>
 			<option value="9">Softbank</option>
 			<option value="10">American Movil</option>
+			<option value="11">Orange Business Services</option>
 		</select>
 	</div>
 	<div id="map">
@@ -58,28 +59,77 @@
 
   	// 보다폰  // 몰타..
   	var data5 =  {
-  			"GB" : 1,
   			"AL" : 1,
-  			"AU" : 1,
-  			"BR" : 1,
+  			"AT" : 1,
+  			"BE" : 1,
+  			"BG" : 1,
+  			"HR" : 1,
+  			"CY" : 1,
   			"CZ" : 1,
-  			"EG" : 1,
+  			"DK" : 1,
+  			"EE" : 1,
+  			"FI" : 1,
+  			"FR" : 1,
   			"DE" : 1,
-  			"GH" : 1,
   			"GR" : 1,
   			"HU" : 1,
-  			"IN" : 1,
+  			"IS" : 1,
   			"IE" : 1,
   			"IT" : 1,
-  			"KE" : 1,
+  			"LT" : 1,
+  			"LU" : 1,
+  			"MK" : 1,
   			"NL" : 1,
-  			"NZ" : 1,
+  			"NO" : 1,
+  			"PL" : 1,
   			"PT" : 1,
-  			"QA" : 1,
   			"RO" : 1,
-  			"ZA" : 1,
+  			"RU" : 1,
+  			"RS" : 1,
+  			"SI" : 1,
   			"ES" : 1,
-  			"TR" : 1
+  			"SE" : 1,
+  			"CH" : 1,
+  			"TR" : 1,
+  			"GB" : 1,
+  			"UA" : 1,
+  			"BR" : 1,
+  			"CA" : 1,
+  			"CL" : 1,
+  			"US" : 1,
+  			"CD" : 1,
+  			"EG" : 1,
+  			"GH" : 1,
+  			"IQ" : 1,
+  			"JO" : 1,
+  			"KE" : 1,
+  			"KW" : 1,
+  			"LS" : 1,
+  			"LY" : 1,
+  			"MZ" : 1,
+  			"QA" : 1,
+  			"SA" : 1,
+  			"ZA" : 1,
+  			"TZ" : 1,
+  			"AE" : 1,
+  			"UZ" : 1,
+  			"AU" : 1,
+  			"CN" : 1,
+  			"FJ" : 1,
+  			"IN" : 1,
+  			"JP" : 1,
+  			"MY" : 1,
+  			"NZ" : 1,
+  			"PH" : 1,
+  			"KR" : 1,
+  			"LK" : 1,
+  			"TW" : 1,
+  			"TH" : 1,
+  			"AF" : 1,
+  			"AM" : 1,
+  			"TM" : 1,
+  			"UZ" : 1
+
   	};
 
   	// 도이치 텔레콤 (Central Europe)
@@ -87,7 +137,7 @@
   		"AT" : 1, //CE
   		"CZ" : 1, //CE
   		"DE" : 1, //CE
-  		"HU" : 1, //CE
+//  		"HU" : 1, //CE
   		"PL" : 1, //CE
   		"SK" : 1, //CE
   		"SI" : 1, //CE
@@ -95,7 +145,10 @@
   		"MK" : 1,
   		"ME" : 1,
   		"GR" : 1,
-  		"ES" : 1
+  		"ES" : 1,
+  		"NL" : 1,
+  		"GB" : 1,
+  		"US" : 1
   	};
 
   	// Telefonica
@@ -155,6 +208,37 @@
   		"UY" : 1,
   		"AU" : 1
   	}
+
+  	// Orange Business Services
+  	var data11 = {
+  		"GB" : 1,
+  		"BE" : 1,
+  		"LU" : 1,
+  		"RO" : 1,
+  		"PL" : 1,
+  		"SK" : 1,
+  		"MD" : 1,
+  		"AM" : 1,
+  		"FR" : 1,
+  		"ES" : 1,
+  		"PT" : 1,
+  		"MA" : 1,
+  		"TN" : 1,
+  		"EG" : 1,
+  		"JO" : 1,
+  		"IQ" : 1,
+  		"NE" : 1,
+  		"CF" : 1,
+  		"UG" : 1,
+  		"KE" : 1,
+  		"GW" : 1,
+  		"GN" : 1,
+  		"CI" : 1,
+  		"CM" : 1,
+  		"CD" : 1,
+  		"BW" : 1,
+  		"MG" : 1
+  	};
 
   	    var map = new jvm.Map({
 			map: 'world_mill_en',
@@ -217,6 +301,9 @@
   	    			break;
   	    			case '10':
   	    				data = data10;
+  	    			break;
+  	    			case '11':
+  	    				data = data11;
   	    			break;
   	    		}
 
