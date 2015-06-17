@@ -155,8 +155,9 @@
   		"AU" : 1
   	}
 
-		$('#map').vectorMap({
+  	    var map = new jvm.Map({
 			map: 'world_mill_en',
+      		container: $('#map'),
 			backgroundColor:'#ffffff',
 			regionStyle: {
 			  initial: {
@@ -184,6 +185,8 @@
 	            }]
 	          },
 			});
+
+  	    console.log(map);
 	</script>
 </body>
 </html>
